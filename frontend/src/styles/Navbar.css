@@ -1,0 +1,171 @@
+/* General Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Navbar Styles for Larger Screens */
+.navbar {
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 130px;
+  padding:15px 50px;
+  margin-left:30px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar ul li a:hover {
+  color: #0cd1c4;
+}
+
+/* Add styles for active link */
+.navbar .active {
+  color: #11cecbd1;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar ul li a:hover {
+  color: #13adabd8;
+}
+
+.navbar .logo{
+  font-family: "Kenia", sans-serif;
+  font-size:50px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Sidebar Styles for Smaller Screens */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden */
+  background-color: #333;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0; /* Slide in when open */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.sidebar ul li {
+  padding: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-indent: 55px;
+}
+
+.sidebar ul li a:hover {
+  color: #11cecbd1;
+  border-radius: 20px;
+}
+
+.sidebar .logo{
+  font-family: "Kenia", sans-serif;
+  font-size:40px;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  padding: 10px 0;
+}
+
+.sidebar ul li a.active {
+  color: #11cecbd1;
+}
+
+.sidebar ul li a:hover {
+  background-color: #11cecbd1;
+  color: white;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  /* Hide sidebar and toggle button on larger screens */
+  .sidebar {
+    display: none;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+
+  /* Display normal navbar on larger screens */
+  .navbar {
+    display: flex;
+  }
+}
+
+@media (max-width: 1199px) {
+  /* Hide navbar on smaller screens */
+  .navbar {
+    display: none;
+  }
+
+  /* Display sidebar and toggle button on smaller screens */
+  .sidebar {
+    display: block;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+}
