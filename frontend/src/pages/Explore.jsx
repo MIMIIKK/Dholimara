@@ -11,7 +11,6 @@ const Explore = ()=>{
         <div>
             <Navbar />
             <HeroSection />
-           This is Explore page
            <Footer />
         </div>
     )

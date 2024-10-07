@@ -1,0 +1,30 @@
+.responsive-image {
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+@media (max-width: 1200px){
+    .responsive-image {
+        width:100%;
+    }
+    .content-title{
+        padding:20px 25px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+    }
+    .content{
+       margin:0 25px;
+       font-size: 20px;
+       font-family: 'Quicksand', sans-serif;
+       padding-bottom:120px;
+       word-spacing: 1.5px;
+       line-height:35px;
+    }
+}    
+
+@media (min-width: 1200px) {
+    .responsive-image{
+        width:50%;
+    }
+}

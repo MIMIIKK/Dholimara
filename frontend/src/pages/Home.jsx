@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
+import '../styles/Images.css';
 
 const Home = ()=> {
     useEffect(()=>{
@@ -11,6 +12,8 @@ const Home = ()=> {
         <div>
             <Navbar />
             <HeroSection />
+            <img src='/homepage1.jpg' className='responsive-image' />
+            Welcome To DHOLIMARA
             <Footer />
             </div>
     )

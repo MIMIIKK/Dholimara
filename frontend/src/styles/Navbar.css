@@ -131,7 +131,7 @@ body {
   position: absolute;
   top: 10px;
   right: 20px;
-  font-size: 24px;
+  font-size: 30px;
   color: black;
   background: none;
   border: none;
@@ -167,5 +167,8 @@ body {
 
   .toggle-btn {
     display: block;
+  }
+  .sidebar.open .logo{
+    margin-left:10px;
   }
 }
