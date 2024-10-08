@@ -72,7 +72,7 @@ body {
   position: fixed;
   top: 0;
   left: -250px; /* Initially hidden */
-  background-color: #333;
+  background-color: #4c7972;
   transition: left 0.3s ease;
   z-index: 1000;
 }
@@ -147,7 +147,6 @@ body {
   .toggle-btn {
     display: none;
   }
-
   /* Display normal navbar on larger screens */
   .navbar {
     display: flex;
@@ -163,6 +162,7 @@ body {
   /* Display sidebar and toggle button on smaller screens */
   .sidebar {
     display: block;
+    
   }
 
   .toggle-btn {

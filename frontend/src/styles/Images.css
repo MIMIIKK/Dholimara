@@ -7,6 +7,7 @@
 @media (max-width: 1200px){
     .responsive-image {
         width:100%;
+        border:2px solid black;
     }
     .content-title{
         padding:20px 25px;
@@ -15,16 +16,27 @@
     }
     .content{
        margin:0 25px;
-       font-size: 20px;
        font-family: 'Quicksand', sans-serif;
        padding-bottom:120px;
-       word-spacing: 1.5px;
-       line-height:35px;
+       word-spacing: 2px;
+       line-height: 25px;
+       font-size:18px;
     }
 }    
 
 @media (min-width: 1200px) {
     .responsive-image{
         width:50%;
+    }
+    .content-title{
+        padding:20px 25px;
+        font-size:50px;
+    }
+    .content{
+        margin:0 25px;
+        font-size: 25px;
+        padding-bottom: 120px;
+        word-spacing: 1.5px;
+        line-height: 40px;
     }
 }

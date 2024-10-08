@@ -1,0 +1,76 @@
+@media (max-width: 1200px) {
+    .slogan{
+        padding:10px 20px;
+        font-size: 19px;
+        font-weight:bold;
+    }
+    .hero-content{
+        padding:10px 20px;
+        word-spacing: 2px;
+        line-height: 25px;
+        font-size:18px;
+        padding-bottom:50px;
+    }
+    .learn-more{
+        font-size:20px;
+        border-radius:10px;
+        padding:5px 10px;
+        margin-left:22px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .home-herosection{
+        padding-bottom:100px;
+    }
+    /*this is about-content */
+    .about-us{
+        background-size: cover;
+        background-position:center;
+        position:relative;
+        z-index:1;
+    }
+    .about-us::before {
+        content: '';
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-image: url('/homepage2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: opacity(0.5);
+        z-index: -1;
+
+    }
+    .slogan-about{
+        color:green;
+        font-size:18px;
+        margin-left:20px;
+        font-weight:bold;
+        padding-top:10px;
+    }
+    .slogan-title-about{
+        padding:10px 20px;
+        font-size: 19px;
+        font-weight:bold;
+    }
+    .about-content{
+        padding:30px 20px;
+        word-spacing: 2px;
+        line-height: 25px;
+        font-size:18px;
+        padding-bottom:40px;
+    }
+    .learn-more-about{
+        font-size:20px;
+        border-radius:10px;
+        border:2px solid black;
+        padding:5px 10px;
+        margin-left:22px;
+        font-family: 'Quicksand', sans-serif;
+        cursor: pointer;
+        margin-bottom:50px;
+        background-color: transparent;
+        color:black;
+    }
+}

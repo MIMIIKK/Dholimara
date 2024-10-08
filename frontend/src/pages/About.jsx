@@ -2,16 +2,18 @@ import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
+import '../styles/Images.css';
+import '../styles/Homepage.css';
 
-const About = ()=>{
-    useEffect(()=>{
+const About = () => {
+    useEffect(() => {
         document.title = 'DHOLIMARA | ABOUT';
     }, []);
-    return(
+    return (
         <div>
             <Navbar />
             <HeroSection />
-            This is About page
+            <img src='./homepage2.jpg' className='responsive-image'></img>
             <Footer />
         </div>
     )
