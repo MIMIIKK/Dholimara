@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import '../styles/Images.css';
 import '../styles/Homepage.css';
+import ImageSlider from '../components/ImageSlider';
 
 const Home = () => {
     useEffect(() => {
@@ -14,7 +15,7 @@ const Home = () => {
         <div>
             <Navbar />
             <HeroSection />
-            <img src='/homepage1.jpg' className='responsive-image' />
+            <ImageSlider />
             <div className='home-herosection'>
                 <p className='slogan'>Discover the Tranquility Within our Village</p>
                 <p className='hero-content'>
