@@ -17,6 +17,7 @@
         padding:5px 10px;
         margin-left:22px;
         font-family: 'Quicksand', sans-serif;
+        cursor: pointer;
     }
     .home-herosection{
         padding-bottom:100px;
@@ -72,5 +73,82 @@
         margin-bottom:50px;
         background-color: transparent;
         color:black;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slogan{
+        padding:50px 50px;
+        font-size: 45px;
+        font-weight:bold;
+    }
+    .hero-content{
+        padding:10px 50px;
+        word-spacing: 2px;
+        font-size:28px;
+        padding-bottom:50px;
+    }
+    .learn-more{
+        font-size:28px;
+        border-radius:10px;
+        padding:5px 20px;
+        margin-left:50px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .home-herosection{
+        padding-bottom:300px;
+    }
+    /*this is about-content */
+    .about-us{
+        background-size: cover;
+        background-position:center;
+        position:relative;
+        z-index:1;
+        height:700px;
+    }
+    .about-us::before {
+        content: '';
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-image: url('/homepage2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: opacity(0.5);
+        z-index: -1;
+
+    }
+    .slogan-about{
+        color:green;
+        font-size:28px;
+        margin-left:70px;
+        font-weight:bold;
+        padding-top:60px;
+    }
+    .slogan-title-about{
+        padding:50px 50px;
+        font-size: 40px;
+        font-weight:bold;
+    }
+    .about-content{
+        padding:30px 50px;
+        word-spacing: 2px;
+        font-size:28px;
+        padding-bottom:40px;
+    }
+    .learn-more-about{
+        font-size:28px;
+        border-radius:10px;
+        border:2px solid black;
+        padding:5px 20px;
+        margin-left:50px;
+        font-family: 'Quicksand', sans-serif;
+        cursor: pointer;
+        margin-bottom:50px;
+        background-color: transparent;
+        color:black;
+        margin-top:50px;
     }
 }

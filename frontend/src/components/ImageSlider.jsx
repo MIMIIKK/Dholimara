@@ -28,7 +28,7 @@ const ImageSlider = () => {
             ))};
 
             <div className='floating-content'>
-                <h1>WELCOME TO<h1 className='logo'>DHOLIMARA</h1></h1>
+                <h1>WELCOME TO<h1 className='villageName'>DHOLIMARA</h1></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore culpa, est eius sequi qui dolorum doloribus impedit voluptatum veniam hic.</p>
             </div>
         </div>

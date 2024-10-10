@@ -45,8 +45,8 @@
 
 .floating-content {
   position:absolute;
-  top: 14cap;
-  left:13.5cap;
+  top:40%;
+  left:40%;
   transform: translate(-50%, -50%);
   z-index:3;
   color:white;
@@ -60,10 +60,96 @@
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   color:white;
 }
-.floating-content .logo {
+.floating-content .villageName {
   font-size:50px;
   font-family: 'Kenia', sans-serif;
   margin-left:-10px;
+}
+
+@keyframes float-in {
+  0%{
+    transform: translate(-50%, 30%);
+    opacity:0;
+  }
+  100%{ 
+    transform: translate(-50%,-50%);
+    opacity:1;
+  }
+}
+}
+@media (min-width: 1200px) {
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 800px; /* Adjust based on your layout */
+    overflow: hidden;
+  }
+  
+  .zoom-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    border:1px solid black;
+    transform: scale(1.1);
+    transition: transform 3s ease-in-out, opacity 1s ease-in-out;
+  }
+  
+  .zoom-image.active {
+    opacity: 1; /* Visible */
+    transform: scale(1.3); /* Zoom effect */
+    z-index: 1; /* Bring the active image to the front */
+  }
+  
+  .zoom-image.hidden {
+    opacity: 0; /* Hidden */
+    z-index: 0; /* Push hidden images to the back */
+    transform: scale(1);
+  }
+  /* Ensures that the images appear to smoothly fade and zoom between each other */
+  .image-container::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index:2;
+  }
+
+.floating-content {
+  position:absolute;
+  top:25%;
+  left:35%;
+  transform: translate(-50%, -50%);
+  z-index:3;
+  color:white;
+  animation: float-in 3s ease-in-out forwards;
+}
+
+.floating-content h1, .floating-content p {
+  margin:0;
+  padding:10px;
+  font-family: 'Quicksand', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color:white;
+}
+h1 {
+  font-size:50px;
+}
+.floating-content .villageName{
+  font-family:'Kenia', sans-serif;
+  font-size:80px;
+  color:white;
+  padding-top:30px;
+  margin-left:-10px;
+}
+.floating-content p {
+  font-size:30px;
 }
 
 @keyframes float-in {
