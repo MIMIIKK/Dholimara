@@ -53,17 +53,23 @@
   animation: float-in 3s ease-in-out forwards;
 }
 
-.floating-content h1, .floating-content p {
-  margin:0;
-  padding:10px;
+.floating-content h2 {
+  margin-top:30px;
   font-family: 'Quicksand', sans-serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   color:white;
+  padding-bottom:15px;
 }
 .floating-content .villageName {
-  font-size:50px;
+  font-size:40px;
   font-family: 'Kenia', sans-serif;
-  margin-left:-10px;
+}
+.floating-content p {
+  margin-top:80px;
+  font-family: 'Quicksand', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color:white;
+  padding-bottom:10px;
 }
 
 @keyframes float-in {
@@ -150,6 +156,9 @@ h1 {
 }
 .floating-content p {
   font-size:30px;
+}
+.floating-content h2{
+  font-size:50px;
 }
 
 @keyframes float-in {
